@@ -1,0 +1,31 @@
+{
+  "name": "express-example1",
+  "version": "1.0.0",
+  "description": "Example project using Express.js",
+  "main": "index.js",
+  "scripts": {
+    "run": "babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kogia-sima/express-example1.git"
+  },
+  "author": "Kogia-sima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kogia-sima/express-example1/issues"
+  },
+  "homepage": "https://github.com/Kogia-sima/express-example1#readme",
+  "dependencies": {
+    "cls-hooked": "^4.2.2",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.6.1"
+  }
+}
