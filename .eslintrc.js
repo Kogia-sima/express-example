@@ -2,15 +2,16 @@ module.exports = {
   root: true,
   env: {
     node: true,
+    es2021: true,
   },
   extends: [
     'eslint:recommended',
     'prettier',
+    'plugin:import/recommended',
   ],
   parserOptions: {
-    parser: "@babel/eslint-parser",
     sourceType: "module",
-    ecmaVersion: 2018
+    ecmaVersion: 13,
   },
   rules: {
     camelcase: "warn",
@@ -24,8 +25,10 @@ module.exports = {
     "no-octal-escape": "error",
     "no-promise-executor-return": "warn",
     "no-self-compare": "warn",
+    "no-unused-vars": "warn",
     "no-useless-return": "warn",
     "no-var": "error",
     "prefer-const": "warn",
-  }
+  },
+  ignorePatterns: ["/node_modules/", "/dist/"]
 }
